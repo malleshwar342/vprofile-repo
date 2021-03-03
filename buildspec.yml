@@ -14,4 +14,4 @@ phases:
       - echo Build completed on `date`
       - mvn clean validate 
 artifacts:
-  files:
+  files: arn:aws:codestar:us-east-2:855632519870:project/java-project
