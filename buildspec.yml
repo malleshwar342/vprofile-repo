@@ -15,4 +15,4 @@ phases:
       - mvn clean validate 
 artifacts:
   files: 
-    - target/vprofile.jar
+    - target/plexus-utils-3.0.jar
