@@ -7,8 +7,7 @@ phases:
   post_build:
     commands:
         -echo prebuild stage 'date'
-        -mvn clean
-        
+        -mvn clean        
  build:
     commands:
         -echo build complete on 'date'
