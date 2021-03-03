@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: corretto11
+      java: corretto 8
   post_build:
     commands:
         -echo prebuild stage 'date'
