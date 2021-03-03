@@ -1,19 +1,17 @@
-version: 0.2
-
+version: 0.2 
 phases:
   install:
     runtime-versions:
       java: corretto8
+  pre_build:
+    commands:
+      - echo Prebuild Stage `date`
+  build:
+    commands:
+      - echo Build started on `date`
   post_build:
     commands:
-        -echo prebuild stage 'date'
-        -mvn clean        
- build:
-    commands:
-        -echo build complete on 'date'
-        -mvn package     
-
+      - echo Build completed on `date`
+      - mvn clean validate 
 artifacts:
   files:
-    - '**/*'
-    - 'template-configuration.json'
