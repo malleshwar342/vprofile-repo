@@ -12,7 +12,4 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - mvn clean validate 
-artifacts:
-  files: 
-    - target/plexus-utils-3.0.jar
+      - mvn clean validate
