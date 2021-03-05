@@ -15,4 +15,4 @@ phases:
       - mvn clean validate compile test
 artifacts:
   files:
-    - target/
+    - target/vprofile-
