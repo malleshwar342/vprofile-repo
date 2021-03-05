@@ -12,7 +12,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - mvn clean validate compile test
+      - mvn clean validate compile test install
 artifacts:
   files:
     - target/vprofile-v1.war
